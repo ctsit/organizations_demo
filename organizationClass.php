@@ -23,14 +23,19 @@ class organizationClass extends AbstractExternalModule {
                     'type' => 'text',
                     'required' => true,
                 ],
-                'id' => [
-                    'name' => 'org_id',
+                'org_id' => [
+                    'name' => 'Organization ID',
                     'type' => 'text',
                     'required' => true,
                 ],
                 'parent_id' => [
                     'name' => 'Parent Organization ID',
                     'type' => 'text',
+                    'required' => false,
+                ],
+                'level' => [
+                    'name' => 'Organizational Level',
+                    'type' => 'integer',
                     'required' => false,
                 ],
             ],
